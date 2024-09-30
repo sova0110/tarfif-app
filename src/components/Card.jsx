@@ -10,7 +10,9 @@ function Card(props) {
     return (
         <div className={`${styles.body} ${props.isHeightIncreased ? styles.cardHeightIncreased : ''}`}>
             <div className={titleClass}>
-                <h4 className={styles.h4Title}>{props.title}</h4>
+                <h4 className={styles.h4Title}>
+                    {props.title} {props.isSelected && <span className={styles.checkmark}>✔️</span>}
+                </h4>
             </div>
             <div className={contentClass}>
                 <p>
@@ -18,6 +20,7 @@ function Card(props) {
                     <span style={{ fontSize: '40px' }}>{props.amount}</span>
                     <span style={{ fontSize: '16px' }}> /мес</span>
                 </p>
+                <button className={styles.chooseBtn} onClick={props.onSelect}>Выбрать</button>
             </div>
             <div className={conditionClass}>
                 <p>{props.condition}</p>

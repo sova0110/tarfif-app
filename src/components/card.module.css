@@ -84,5 +84,14 @@
     background-color: rgb(228, 227, 227);
 }
 
+.contentClass{
+    display: flex;
+    flex-direction: column;
+}
+
+.chooseBtn{
+    background-color:lightgoldenrodyellow;
+}
+
 
 
