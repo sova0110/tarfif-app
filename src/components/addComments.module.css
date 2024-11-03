@@ -1,0 +1,16 @@
+input {
+    margin-bottom: 10px;
+    width: 40vw;
+}
+
+.addCommentBtn {
+    margin-left: 10px;
+    background-color: green;
+    color: aliceblue;
+}
+.addCommentSection{
+    margin-top: 30px;
+}
+.addCommentBtn:hover{
+    color: gold;
+}
